@@ -1,0 +1,36 @@
+{
+  "name": "pandly-cli",
+  "version": "1.0.0",
+  "description": "A pro CLI for scaffolding Vue.js projects",
+  "preferGlobal": true,
+  "bin": {
+    "pandly": "bin/pandly",
+    "pandly-create": "bin/pandly-create"
+  },
+  "script": {
+    "postpublish": "git push",
+    "postversion": "npm publish"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "spa"
+  ],
+  "author": "Pandly Shen",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.6",
+    "inquirer": "^7.1.0",
+    "metalsmith": "^2.3.0",
+    "ora": "^4.0.3",
+    "request": "^2.88.2",
+    "semver": "^7.3.2",
+    "user-home": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=8.12.0"
+  }
+}
